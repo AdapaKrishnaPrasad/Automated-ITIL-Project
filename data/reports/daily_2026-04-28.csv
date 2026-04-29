@@ -1,0 +1,10 @@
+metric,value
+report_type,Daily
+date,2026-04-28
+generated_at,2026-04-28T10:39:32
+total_tickets,2
+open_tickets,2
+closed_tickets,0
+resolved_tickets,0
+high_priority_p1,2
+sla_breaches,0

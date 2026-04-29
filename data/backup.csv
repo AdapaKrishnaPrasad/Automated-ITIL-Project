@@ -1,0 +1,4 @@
+ticket_type,ticket_id,employee_name,department,issue_description,category,priority,status,created_date,updated_date,closed_date,resolution_notes,sla_breached,impact,urgency,escalation_count
+IncidentTicket,TKT-20260428-32F2,Krishna,IT,Server Down,Hardware,P1,In Progress,2026-04-28T10:36:37,2026-04-28T10:38:02,,['[2026-04-28T10:38:02] Team Assigned'],True,High,High,0
+IncidentTicket,TKT-20260428-388B,System Monitor,IT Operations,LOW DISK SPACE ALERT – Disk 90.9% full (free < 10%),Performance,P1,Open,2026-04-28T10:38:47,2026-04-28T10:38:47,,[],True,High,High,0
+IncidentTicket,TKT-20260429-2FB0,Kiran,IT,Network Issue,Network,P2,Open,2026-04-29T08:34:57,2026-04-29T08:34:57,,[],False,High,High,0

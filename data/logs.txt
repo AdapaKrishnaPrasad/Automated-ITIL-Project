@@ -1,0 +1,785 @@
+2026-04-28 10:35:21 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:35:21 | ✅ INFO     | ITServiceDesk | Application started.
+2026-04-28 10:36:37 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'Krishna', 'department': 'IT', 'issue_description': 'Server Down', 'category': 'Hardware', 'priority': None, 'ticket_type': 'Incident', 'impact': 'High', 'urgency': 'High'}
+2026-04-28 10:36:37 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-32F2 | priority=P1
+2026-04-28 10:36:37 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:38:02 | 🔍 DEBUG    | ITServiceDesk | [START] UpdateTicket | args=('TKT-20260428-32F2', 'In Progress', 'Team Assigned') kwargs={}
+2026-04-28 10:38:02 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=UPDATED | id=TKT-20260428-32F2 | status=Open→In Progress
+2026-04-28 10:38:02 | 🔍 DEBUG    | ITServiceDesk | [END]   UpdateTicket completed successfully
+2026-04-28 10:38:47 | 🔥 CRITICAL | ITServiceDesk | MONITOR_ALERT | metric=disk | value=90.9% | threshold=90.0%
+2026-04-28 10:38:47 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System Monitor', 'department': 'IT Operations', 'issue_description': 'LOW DISK SPACE ALERT – Disk 90.9% full (free < 10%)', 'category': 'Performance', 'priority': 'P1', 'ticket_type': 'Incident', 'impact': 'High', 'urgency': 'High'}
+2026-04-28 10:38:47 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-388B | priority=P1
+2026-04-28 10:38:47 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:38:47 | 🔥 CRITICAL | ITServiceDesk | AUTO-TICKET CREATED | id=TKT-20260428-388B | reason=disk alert
+2026-04-28 10:39:08 | ✅ INFO     | ITServiceDesk | REPORT GENERATED | Daily | date=2026-04-28 | total=2
+2026-04-28 10:39:16 | ✅ INFO     | ITServiceDesk | REPORT GENERATED | Monthly | 2026-04 | total=2
+2026-04-28 10:39:32 | ✅ INFO     | ITServiceDesk | REPORT GENERATED | Daily | date=2026-04-28 | total=2
+2026-04-28 10:39:32 | ✅ INFO     | ITServiceDesk | REPORT EXPORTED | C:\Users\HP\Desktop\smart_it_service_desk\data\reports\daily_2026-04-28.csv
+2026-04-28 10:39:44 | ✅ INFO     | ITServiceDesk | Backup: wrote 2 tickets to C:\Users\HP\Desktop\smart_it_service_desk\data\backup.csv
+2026-04-28 10:39:51 | ✅ INFO     | ITServiceDesk | Application exited normally.
+2026-04-28 10:44:36 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:36 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'Alice', 'department': 'IT', 'issue_description': 'Server is down', 'category': 'Hardware', 'priority': 'P1', 'ticket_type': 'Incident'}
+2026-04-28 10:44:36 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-70A6 | priority=P1
+2026-04-28 10:44:36 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:36 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:36 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System', 'department': 'Ops', 'issue_description': 'Repeated disk full across servers', 'category': 'Performance', 'ticket_type': 'Problem', 'related_tickets': ['TKT-001', 'TKT-002']}
+2026-04-28 10:44:36 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-685D | priority=P3
+2026-04-28 10:44:37 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:37 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:37 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'Bob', 'department': 'HR', 'issue_description': 'Need password reset', 'category': 'Access', 'ticket_type': 'ServiceRequest'}
+2026-04-28 10:44:37 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-91C3 | priority=P4
+2026-04-28 10:44:37 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:37 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:37 | ⚠️  WARNING  | ITServiceDesk | ESCALATION | ticket=TKT-20260428-2493 | count=1
+2026-04-28 10:44:38 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:38 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:38 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:39 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:39 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:39 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice', 'IT', 'Issue A', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:39 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-1910 | priority=P1
+2026-04-28 10:44:39 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:39 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob', 'HR', 'Issue B', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:39 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-5E53 | priority=P2
+2026-04-28 10:44:39 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:39 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:40 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:40 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:40 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:41 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:41 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('A', 'IT', 'Issue 1', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:41 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-D9CC | priority=P1
+2026-04-28 10:44:41 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:41 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('B', 'HR', 'Issue 2', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:41 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-523F | priority=P2
+2026-04-28 10:44:41 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:43 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:43 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:43 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:44 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:44 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:44 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System Monitor', 'department': 'IT Operations', 'issue_description': 'HIGH CPU ALERT – CPU usage at 95.0% (threshold 90%)', 'category': 'Performance', 'priority': 'P1', 'ticket_type': 'Incident', 'impact': 'High', 'urgency': 'High'}
+2026-04-28 10:44:44 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-B29E | priority=P1
+2026-04-28 10:44:45 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:45 | 🔥 CRITICAL | ITServiceDesk | AUTO-TICKET CREATED | id=TKT-20260428-B29E | reason=cpu alert
+2026-04-28 10:44:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:45 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System Monitor', 'department': 'IT Operations', 'issue_description': 'HIGH MEMORY ALERT – RAM usage at 97.0% (threshold 95%)', 'category': 'Performance', 'priority': 'P1', 'ticket_type': 'Incident', 'impact': 'High', 'urgency': 'High'}
+2026-04-28 10:44:45 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-D474 | priority=P1
+2026-04-28 10:44:45 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:45 | 🔥 CRITICAL | ITServiceDesk | AUTO-TICKET CREATED | id=TKT-20260428-D474 | reason=memory alert
+2026-04-28 10:44:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:46 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:46 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob', 'HR', 'Printer issue', 'Hardware', 'P3') kwargs={}
+2026-04-28 10:44:46 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-3F46 | priority=P3
+2026-04-28 10:44:46 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:46 | ✅ INFO     | ITServiceDesk | Backup: wrote 1 tickets to C:\Users\HP\AppData\Local\Temp\tmpklf9woc5\backup.csv
+2026-04-28 10:44:46 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:46 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Carol', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:46 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-BFEF | priority=P2
+2026-04-28 10:44:46 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:46 | ✅ INFO     | ITServiceDesk | Backup: wrote 1 tickets to C:\Users\HP\AppData\Local\Temp\tmpneiufo9f\backup.csv
+2026-04-28 10:44:47 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:47 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:47 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-7AFF | priority=P1
+2026-04-28 10:44:47 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:47 | ✅ INFO     | ITServiceDesk | Loaded 1 tickets from storage.
+2026-04-28 10:44:47 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:47 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:47 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-BE27 | priority=P1
+2026-04-28 10:44:47 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:47 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:44:47 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-30D1 | priority=P4
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-BD10 | priority=P2
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [START] UpdateTicket | args=('TKT-20260428-BE27', 'Closed') kwargs={}
+2026-04-28 10:44:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=UPDATED | id=TKT-20260428-BE27 | status=Open→Closed
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [END]   UpdateTicket completed successfully
+2026-04-28 10:44:48 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-81AC | priority=P1
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:44:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-5B4D | priority=P4
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-1398 | priority=P2
+2026-04-28 10:44:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:48 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-6B44 | priority=P1
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-E682 | priority=P4
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-FBA3 | priority=P2
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-3B98 | priority=P1
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-40B6 | priority=P4
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-D643 | priority=P2
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-D63C | priority=P1
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-D24D | priority=P4
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-E21B | priority=P2
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-750B | priority=P1
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-2A88 | priority=P4
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-7916 | priority=P2
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-0A78 | priority=P1
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-BC67 | priority=P4
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-79FF | priority=P2
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-7A0A | priority=P1
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-8A4D | priority=P4
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-D4C1 | priority=P2
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-3188 | priority=P1
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-9CC1 | priority=P4
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-67CF | priority=P2
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-AA94 | priority=P1
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-C2DD | priority=P4
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-2447 | priority=P2
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('X', 'IT', 'Issue', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-3DCD | priority=P1
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [START] CloseTicket | args=('TKT-20260428-3DCD', 'Fixed') kwargs={}
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CLOSED | id=TKT-20260428-3DCD
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CloseTicket completed successfully
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | 🔍 DEBUG    | ITServiceDesk | [START] DeleteTicket | args=('TKT-GHOST-0000',) kwargs={}
+2026-04-28 10:44:50 | ❌ ERROR    | ITServiceDesk | [FAIL]  DeleteTicket raised TicketNotFoundError: Ticket 'TKT-GHOST-0000' not found.
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:51 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('A', 'IT', 'I1', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:51 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-5045 | priority=P1
+2026-04-28 10:44:51 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:51 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('B', 'HR', 'I2', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:51 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-9CC8 | priority=P2
+2026-04-28 10:44:51 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:51 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('A', 'IT', 'I1', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:44:51 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-69E0 | priority=P1
+2026-04-28 10:44:51 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:51 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('B', 'HR', 'I2', 'Software', 'P2') kwargs={}
+2026-04-28 10:44:51 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-FCA4 | priority=P2
+2026-04-28 10:44:51 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:44:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:51 | 🔍 DEBUG    | ITServiceDesk | [START] UpdateTicket | args=('TKT-GHOST-0000', 'Closed') kwargs={}
+2026-04-28 10:44:51 | ❌ ERROR    | ITServiceDesk | [FAIL]  UpdateTicket raised TicketNotFoundError: Ticket 'TKT-GHOST-0000' not found.
+2026-04-28 10:44:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:44:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:41 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:41 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'Alice', 'department': 'IT', 'issue_description': 'Server is down', 'category': 'Hardware', 'priority': 'P1', 'ticket_type': 'Incident'}
+2026-04-28 10:57:41 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-7C95 | priority=P1
+2026-04-28 10:57:42 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:42 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:42 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System', 'department': 'Ops', 'issue_description': 'Repeated disk full across servers', 'category': 'Performance', 'ticket_type': 'Problem', 'related_tickets': ['TKT-001', 'TKT-002']}
+2026-04-28 10:57:42 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-97B4 | priority=P3
+2026-04-28 10:57:43 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:43 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:43 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'Bob', 'department': 'HR', 'issue_description': 'Need password reset', 'category': 'Access', 'ticket_type': 'ServiceRequest'}
+2026-04-28 10:57:43 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-9D47 | priority=P4
+2026-04-28 10:57:43 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:43 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:43 | ⚠️  WARNING  | ITServiceDesk | ESCALATION | ticket=TKT-20260428-C710 | count=1
+2026-04-28 10:57:43 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:44 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:45 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice', 'IT', 'Issue A', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-CE5A | priority=P1
+2026-04-28 10:57:45 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:45 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob', 'HR', 'Issue B', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-63A3 | priority=P2
+2026-04-28 10:57:45 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:45 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('A', 'IT', 'Issue 1', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-EADA | priority=P1
+2026-04-28 10:57:45 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:45 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('B', 'HR', 'Issue 2', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:45 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-8837 | priority=P2
+2026-04-28 10:57:45 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:46 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:46 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:46 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:46 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:46 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:46 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System Monitor', 'department': 'IT Operations', 'issue_description': 'HIGH CPU ALERT – CPU usage at 95.0% (threshold 90%)', 'category': 'Performance', 'priority': 'P1', 'ticket_type': 'Incident', 'impact': 'High', 'urgency': 'High'}
+2026-04-28 10:57:46 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-F29B | priority=P1
+2026-04-28 10:57:46 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:46 | 🔥 CRITICAL | ITServiceDesk | AUTO-TICKET CREATED | id=TKT-20260428-F29B | reason=cpu alert
+2026-04-28 10:57:46 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:46 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System Monitor', 'department': 'IT Operations', 'issue_description': 'HIGH MEMORY ALERT – RAM usage at 97.0% (threshold 95%)', 'category': 'Performance', 'priority': 'P1', 'ticket_type': 'Incident', 'impact': 'High', 'urgency': 'High'}
+2026-04-28 10:57:46 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-2F96 | priority=P1
+2026-04-28 10:57:47 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:47 | 🔥 CRITICAL | ITServiceDesk | AUTO-TICKET CREATED | id=TKT-20260428-2F96 | reason=memory alert
+2026-04-28 10:57:47 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:47 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:47 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:47 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob', 'HR', 'Printer issue', 'Hardware', 'P3') kwargs={}
+2026-04-28 10:57:47 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-0E61 | priority=P3
+2026-04-28 10:57:47 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:47 | ✅ INFO     | ITServiceDesk | Backup: wrote 1 tickets to C:\Users\HP\AppData\Local\Temp\tmp0_qb4_7b\backup.csv
+2026-04-28 10:57:47 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:47 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Carol', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:47 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-0BD9 | priority=P2
+2026-04-28 10:57:47 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:47 | ✅ INFO     | ITServiceDesk | Backup: wrote 1 tickets to C:\Users\HP\AppData\Local\Temp\tmpk0gyfb20\backup.csv
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-62F4 | priority=P1
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | Loaded 1 tickets from storage.
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-3319 | priority=P1
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-D9E8 | priority=P4
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-F32C | priority=P2
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] UpdateTicket | args=('TKT-20260428-3319', 'Closed') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=UPDATED | id=TKT-20260428-3319 | status=Open→Closed
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [END]   UpdateTicket completed successfully
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-5B16 | priority=P1
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-01CB | priority=P4
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-5288 | priority=P2
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-250E | priority=P1
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-0BA5 | priority=P4
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-EC45 | priority=P2
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-3748 | priority=P1
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-343E | priority=P4
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-B2C8 | priority=P2
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-DB3A | priority=P1
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-3618 | priority=P4
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-170E | priority=P2
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-EE83 | priority=P1
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-747F | priority=P4
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-789F | priority=P2
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-A41B | priority=P1
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-77A4 | priority=P4
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-0525 | priority=P2
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-79EC | priority=P1
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:49 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:57:49 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-F51C | priority=P4
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-CE92 | priority=P2
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-ED4B | priority=P1
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-77A0 | priority=P4
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-59BD | priority=P2
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-6D15 | priority=P1
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-9BD2 | priority=P4
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-9AE3 | priority=P2
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('X', 'IT', 'Issue', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-F6C3 | priority=P1
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [START] CloseTicket | args=('TKT-20260428-F6C3', 'Fixed') kwargs={}
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CLOSED | id=TKT-20260428-F6C3
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CloseTicket completed successfully
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:50 | 🔍 DEBUG    | ITServiceDesk | [START] DeleteTicket | args=('TKT-GHOST-0000',) kwargs={}
+2026-04-28 10:57:50 | ❌ ERROR    | ITServiceDesk | [FAIL]  DeleteTicket raised TicketNotFoundError: Ticket 'TKT-GHOST-0000' not found.
+2026-04-28 10:57:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('A', 'IT', 'I1', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-293D | priority=P1
+2026-04-28 10:57:52 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:52 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('B', 'HR', 'I2', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-3AE0 | priority=P2
+2026-04-28 10:57:52 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('A', 'IT', 'I1', 'Hardware', 'P1') kwargs={}
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-09FF | priority=P1
+2026-04-28 10:57:52 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:52 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('B', 'HR', 'I2', 'Software', 'P2') kwargs={}
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260428-B65E | priority=P2
+2026-04-28 10:57:52 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | 🔍 DEBUG    | ITServiceDesk | [START] UpdateTicket | args=('TKT-GHOST-0000', 'Closed') kwargs={}
+2026-04-28 10:57:52 | ❌ ERROR    | ITServiceDesk | [FAIL]  UpdateTicket raised TicketNotFoundError: Ticket 'TKT-GHOST-0000' not found.
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-28 10:57:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:27:10 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\Desktop\smart_it_service_desk\data\tickets.json
+2026-04-29 08:27:10 | ✅ INFO     | ITServiceDesk | Loaded 2 tickets from storage.
+2026-04-29 08:27:10 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'Debug User', 'department': 'IT', 'issue_description': 'Server is down', 'category': 'Hardware', 'priority': 'P1', 'ticket_type': 'Incident'}
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpsd7lsu1w\tickets.json
+2026-04-29 08:32:48 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'Alice', 'department': 'IT', 'issue_description': 'Server is down', 'category': 'Hardware', 'priority': 'P1', 'ticket_type': 'Incident'}
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpsd7lsu1w\tickets.json
+2026-04-29 08:32:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-7179 | priority=P1
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpp_pgl2ia\tickets.json
+2026-04-29 08:32:48 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System', 'department': 'Ops', 'issue_description': 'Repeated disk full across servers', 'category': 'Performance', 'ticket_type': 'Problem', 'related_tickets': ['TKT-001', 'TKT-002']}
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpp_pgl2ia\tickets.json
+2026-04-29 08:32:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-FD6E | priority=P3
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpd8ko940e\tickets.json
+2026-04-29 08:32:48 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'Bob', 'department': 'HR', 'issue_description': 'Need password reset', 'category': 'Access', 'ticket_type': 'ServiceRequest'}
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpd8ko940e\tickets.json
+2026-04-29 08:32:48 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-BE47 | priority=P4
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:48 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpzno5r68f\tickets.json
+2026-04-29 08:32:48 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:48 | ⚠️  WARNING  | ITServiceDesk | ESCALATION | ticket=TKT-20260429-E253 | count=1
+2026-04-29 08:32:49 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmptompopnj\tickets.json
+2026-04-29 08:32:49 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:50 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpg3vdoaj3\tickets.json
+2026-04-29 08:32:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:50 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpci9cad2f\tickets.json
+2026-04-29 08:32:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:50 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp0rbh8zsj\tickets.json
+2026-04-29 08:32:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:50 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpl_nkwtk8\tickets.json
+2026-04-29 08:32:50 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice', 'IT', 'Issue A', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:50 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpl_nkwtk8\tickets.json
+2026-04-29 08:32:50 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-3502 | priority=P1
+2026-04-29 08:32:50 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:50 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob', 'HR', 'Issue B', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpl_nkwtk8\tickets.json
+2026-04-29 08:32:51 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-01EB | priority=P2
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpfv6f6kl2\tickets.json
+2026-04-29 08:32:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp4py2w0yu\tickets.json
+2026-04-29 08:32:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmphf4_b4l5\tickets.json
+2026-04-29 08:32:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpw8h3897n\tickets.json
+2026-04-29 08:32:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpbs5ls0s7\tickets.json
+2026-04-29 08:32:51 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('A', 'IT', 'Issue 1', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpbs5ls0s7\tickets.json
+2026-04-29 08:32:51 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-06AE | priority=P1
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('B', 'HR', 'Issue 2', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpbs5ls0s7\tickets.json
+2026-04-29 08:32:51 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-9289 | priority=P2
+2026-04-29 08:32:51 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpaqhku8s0\tickets.json
+2026-04-29 08:32:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp4fg7g0du\tickets.json
+2026-04-29 08:32:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpy15yhluu\tickets.json
+2026-04-29 08:32:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpimhg90n1\tickets.json
+2026-04-29 08:32:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp1mqf0o9w\tickets.json
+2026-04-29 08:32:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System Monitor', 'department': 'IT Operations', 'issue_description': 'HIGH CPU ALERT – CPU usage at 95.0% (threshold 90%)', 'category': 'Performance', 'priority': 'P1', 'ticket_type': 'Incident', 'impact': 'High', 'urgency': 'High'}
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp1mqf0o9w\tickets.json
+2026-04-29 08:32:52 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-3531 | priority=P1
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:52 | 🔥 CRITICAL | ITServiceDesk | AUTO-TICKET CREATED | id=TKT-20260429-3531 | reason=cpu alert
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpqfmfonkt\tickets.json
+2026-04-29 08:32:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System Monitor', 'department': 'IT Operations', 'issue_description': 'HIGH MEMORY ALERT – RAM usage at 97.0% (threshold 95%)', 'category': 'Performance', 'priority': 'P1', 'ticket_type': 'Incident', 'impact': 'High', 'urgency': 'High'}
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpqfmfonkt\tickets.json
+2026-04-29 08:32:52 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-035B | priority=P1
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:52 | 🔥 CRITICAL | ITServiceDesk | AUTO-TICKET CREATED | id=TKT-20260429-035B | reason=memory alert
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpb9sq628j\tickets.json
+2026-04-29 08:32:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:52 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmperkecsfk\tickets.json
+2026-04-29 08:32:52 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpqu_hode6\tickets.json
+2026-04-29 08:32:53 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob', 'HR', 'Printer issue', 'Hardware', 'P3') kwargs={}
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpqu_hode6\tickets.json
+2026-04-29 08:32:53 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-DA4A | priority=P3
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:53 | ✅ INFO     | ITServiceDesk | Backup: wrote 1 tickets to C:\Users\HP\AppData\Local\Temp\tmpqu_hode6\backup.csv
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp9o39gioo\tickets.json
+2026-04-29 08:32:53 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Carol', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp9o39gioo\tickets.json
+2026-04-29 08:32:53 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-BE59 | priority=P2
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:53 | ✅ INFO     | ITServiceDesk | Backup: wrote 1 tickets to C:\Users\HP\AppData\Local\Temp\tmp9o39gioo\backup.csv
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp0yqe9i63\bad.json
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpuu3k6jja\nonexistent.json
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp5xescqnk\test.json
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp5xescqnk\test.json
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp_xwj9m4w\tickets.json
+2026-04-29 08:32:53 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp_xwj9m4w\tickets.json
+2026-04-29 08:32:53 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-E2EF | priority=P1
+2026-04-29 08:32:53 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp_xwj9m4w\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | Loaded 1 tickets from storage.
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpkk23rpxa\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpkk23rpxa\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-0856 | priority=P1
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpkk23rpxa\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-5175 | priority=P4
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpkk23rpxa\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-5AA1 | priority=P2
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [START] UpdateTicket | args=('TKT-20260429-0856', 'Closed') kwargs={}
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpkk23rpxa\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=UPDATED | id=TKT-20260429-0856 | status=Open→Closed
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [END]   UpdateTicket completed successfully
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp6qzujxle\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp6qzujxle\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-F267 | priority=P1
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp6qzujxle\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-A9A6 | priority=P4
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp6qzujxle\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-3D41 | priority=P2
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:54 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp_h94ty_2\tickets.json
+2026-04-29 08:32:54 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp_h94ty_2\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-FBE8 | priority=P1
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp_h94ty_2\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-47DD | priority=P4
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp_h94ty_2\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-0CAB | priority=P2
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp6o6phwuo\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp6o6phwuo\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-C0BA | priority=P1
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp6o6phwuo\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-45FC | priority=P4
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmp6o6phwuo\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-A9CE | priority=P2
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpzgzxzcap\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpzgzxzcap\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-226A | priority=P1
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpzgzxzcap\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-A783 | priority=P4
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpzgzxzcap\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-0F07 | priority=P2
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpc4livhsy\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpc4livhsy\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-9FE4 | priority=P1
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpc4livhsy\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-7191 | priority=P4
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpc4livhsy\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-CC98 | priority=P2
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpyrpwycur\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpyrpwycur\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-C036 | priority=P1
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpyrpwycur\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-F224 | priority=P4
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpyrpwycur\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-D718 | priority=P2
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpnhzbmje0\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpnhzbmje0\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-EA50 | priority=P1
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpnhzbmje0\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-5264 | priority=P4
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpnhzbmje0\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-D6B3 | priority=P2
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpgm8bhaph\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpgm8bhaph\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-FD03 | priority=P1
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpgm8bhaph\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-7DAD | priority=P4
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpgm8bhaph\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-C56A | priority=P2
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpu8qfsgle\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Smith', 'IT', 'Server down', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpu8qfsgle\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-F5DE | priority=P1
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Bob Jones', 'HR', 'Password reset', 'Access', 'P4') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpu8qfsgle\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-E870 | priority=P4
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('Alice Wong', 'Finance', 'App crash', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpu8qfsgle\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-105C | priority=P2
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpdti0a_vi\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('X', 'IT', 'Issue', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpdti0a_vi\tickets.json
+2026-04-29 08:32:55 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-5E26 | priority=P1
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:55 | 🔍 DEBUG    | ITServiceDesk | [START] CloseTicket | args=('TKT-20260429-5E26', 'Fixed') kwargs={}
+2026-04-29 08:32:56 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpdti0a_vi\tickets.json
+2026-04-29 08:32:56 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CLOSED | id=TKT-20260429-5E26
+2026-04-29 08:32:56 | 🔍 DEBUG    | ITServiceDesk | [END]   CloseTicket completed successfully
+2026-04-29 08:32:56 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpwbisa7zx\tickets.json
+2026-04-29 08:32:56 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:56 | 🔍 DEBUG    | ITServiceDesk | [START] DeleteTicket | args=('TKT-GHOST-0000',) kwargs={}
+2026-04-29 08:32:56 | ❌ ERROR    | ITServiceDesk | [FAIL]  DeleteTicket raised TicketNotFoundError: Ticket 'TKT-GHOST-0000' not found.
+2026-04-29 08:32:56 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpcdci5sta\tickets.json
+2026-04-29 08:32:56 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:56 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpcuu4dojm\tickets.json
+2026-04-29 08:32:56 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:56 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpwn0whdcx\tickets.json
+2026-04-29 08:32:56 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:56 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmppwyg63vf\tickets.json
+2026-04-29 08:32:56 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:56 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp5351i8tw\tickets.json
+2026-04-29 08:32:56 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:57 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpr6m5qilc\tickets.json
+2026-04-29 08:32:57 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:57 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpl4yy5ozd\tickets.json
+2026-04-29 08:32:57 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:57 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp4z22pubs\tickets.json
+2026-04-29 08:32:57 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: /no_such_dir/file.json
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpy2y3gvew\tickets.json
+2026-04-29 08:32:58 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('A', 'IT', 'I1', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpy2y3gvew\tickets.json
+2026-04-29 08:32:58 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-F213 | priority=P1
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('B', 'HR', 'I2', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpy2y3gvew\tickets.json
+2026-04-29 08:32:58 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-F61B | priority=P2
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpeqbxhfm0\tickets.json
+2026-04-29 08:32:58 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('A', 'IT', 'I1', 'Hardware', 'P1') kwargs={}
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpeqbxhfm0\tickets.json
+2026-04-29 08:32:58 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-1CC7 | priority=P1
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=('B', 'HR', 'I2', 'Software', 'P2') kwargs={}
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\AppData\Local\Temp\tmpeqbxhfm0\tickets.json
+2026-04-29 08:32:58 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-0021 | priority=P2
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpr722jwhj\tickets.json
+2026-04-29 08:32:58 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | [START] UpdateTicket | args=('TKT-GHOST-0000', 'Closed') kwargs={}
+2026-04-29 08:32:58 | ❌ ERROR    | ITServiceDesk | [FAIL]  UpdateTicket raised TicketNotFoundError: Ticket 'TKT-GHOST-0000' not found.
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmp5q_8mq91\tickets.json
+2026-04-29 08:32:58 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmppw6y0o6g\tickets.json
+2026-04-29 08:32:58 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:32:58 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\AppData\Local\Temp\tmpjfuqlzct\tickets.json
+2026-04-29 08:32:58 | ✅ INFO     | ITServiceDesk | Loaded 0 tickets from storage.
+2026-04-29 08:33:03 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\Desktop\smart_it_service_desk\data\tickets.json
+2026-04-29 08:33:03 | ✅ INFO     | ITServiceDesk | Loaded 2 tickets from storage.
+2026-04-29 08:33:03 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\Desktop\smart_it_service_desk\data\problems.json
+2026-04-29 08:33:03 | ✅ INFO     | ITServiceDesk | Application started.
+2026-04-29 08:34:22 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\Desktop\smart_it_service_desk\data\tickets.json
+2026-04-29 08:34:22 | ✅ INFO     | ITServiceDesk | Loaded 2 tickets from storage.
+2026-04-29 08:34:22 | 🔍 DEBUG    | ITServiceDesk | load_json attempted: C:\Users\HP\Desktop\smart_it_service_desk\data\problems.json
+2026-04-29 08:34:22 | ✅ INFO     | ITServiceDesk | Application started.
+2026-04-29 08:34:57 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'Kiran', 'department': 'IT', 'issue_description': 'Network Issue', 'category': 'Network', 'priority': None, 'ticket_type': 'Incident', 'impact': 'High', 'urgency': 'High'}
+2026-04-29 08:34:57 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\Desktop\smart_it_service_desk\data\tickets.json
+2026-04-29 08:34:57 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-2FB0 | priority=P2
+2026-04-29 08:34:57 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:35:44 | ✅ INFO     | ITServiceDesk | Backup: wrote 3 tickets to C:\Users\HP\Desktop\smart_it_service_desk\data\backup.csv
+2026-04-29 08:35:54 | ✅ INFO     | ITServiceDesk | REPORT GENERATED | Daily | date=2026-04-29 | total=1
+2026-04-29 08:35:58 | ✅ INFO     | ITServiceDesk | REPORT GENERATED | Monthly | 2026-04 | total=3
+2026-04-29 08:36:02 | ✅ INFO     | ITServiceDesk | REPORT GENERATED | Daily | date=2026-04-29 | total=1
+2026-04-29 08:36:02 | ✅ INFO     | ITServiceDesk | REPORT EXPORTED | C:\Users\HP\Desktop\smart_it_service_desk\data\reports\daily_2026-04-29.csv
+2026-04-29 08:36:05 | ✅ INFO     | ITServiceDesk | REPORT GENERATED | Monthly | 2026-04 | total=3
+2026-04-29 08:36:05 | ✅ INFO     | ITServiceDesk | REPORT EXPORTED | C:\Users\HP\Desktop\smart_it_service_desk\data\reports\monthly_2026_04.csv
+2026-04-29 08:36:15 | 🔥 CRITICAL | ITServiceDesk | MONITOR_ALERT | metric=disk | value=91.0% | threshold=90.0%
+2026-04-29 08:36:15 | 🔍 DEBUG    | ITServiceDesk | [START] CreateTicket | args=() kwargs={'employee_name': 'System Monitor', 'department': 'IT Operations', 'issue_description': 'LOW DISK SPACE ALERT – Disk 91.0% full (free < 10%)', 'category': 'Performance', 'priority': 'P1', 'ticket_type': 'Incident', 'impact': 'High', 'urgency': 'High'}
+2026-04-29 08:36:15 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\Desktop\smart_it_service_desk\data\tickets.json
+2026-04-29 08:36:15 | ✅ INFO     | ITServiceDesk | TICKET_EVENT | event=CREATED | id=TKT-20260429-7F2F | priority=P1
+2026-04-29 08:36:15 | 🔍 DEBUG    | ITServiceDesk | [END]   CreateTicket completed successfully
+2026-04-29 08:36:15 | 🔥 CRITICAL | ITServiceDesk | AUTO-TICKET CREATED | id=TKT-20260429-7F2F | reason=disk alert
+2026-04-29 08:36:34 | ⚠️  WARNING  | ITServiceDesk | SLA_BREACH | ticket=TKT-20260428-32F2 | priority=P1 | overdue_by=1260.0 min
+2026-04-29 08:36:34 | ⚠️  WARNING  | ITServiceDesk | SLA_BREACH | ticket=TKT-20260428-388B | priority=P1 | overdue_by=1257.8 min
+2026-04-29 08:36:34 | ⚠️  WARNING  | ITServiceDesk | ESCALATION | ticket=TKT-20260428-32F2 | count=1
+2026-04-29 08:36:34 | ⚠️  WARNING  | ITServiceDesk | SLA_BREACH | ticket=TKT-20260428-32F2 | priority=P1 | overdue_by=1260.0 min
+2026-04-29 08:36:34 | ⚠️  WARNING  | ITServiceDesk | ESCALATION | ticket=TKT-20260428-388B | count=1
+2026-04-29 08:36:34 | ⚠️  WARNING  | ITServiceDesk | SLA_BREACH | ticket=TKT-20260428-388B | priority=P1 | overdue_by=1257.8 min
+2026-04-29 08:36:34 | 🔍 DEBUG    | ITServiceDesk | save_json attempted: C:\Users\HP\Desktop\smart_it_service_desk\data\tickets.json
+2026-04-29 08:36:42 | ✅ INFO     | ITServiceDesk | Application exited normally.

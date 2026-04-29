@@ -1,0 +1,11 @@
+metric,value
+report_type,Monthly
+year,2026
+month,4
+generated_at,2026-04-29T08:36:05
+total_tickets,3
+closed_tickets,0
+sla_breaches,2
+avg_resolution_min,0.0
+most_common_issue,Hardware
+top_department,IT
